@@ -1,11 +1,30 @@
 body {
     background-color: #0e1111;
     margin: 0;
-    width: 1800px;
-    font-family: 'Roboto', sans-serif; /* Use a more modern font */
-    color: #e6e6e6; /* Light text color for better contrast */
+    font-family: 'Roboto', sans-serif;
+    color: #e6e6e6;
 }
 
+.introduction {
+    padding: 100px 20px; /* Augmentation du padding pour assurer qu'il ne soit pas caché sous la topbar */
+    margin-top: 30px; /* Cela peut être ajusté en fonction de la hauteur de ta topbar */
+    text-align: center; /* Pour centrer le texte */
+}
+
+.introduction h1 {
+    font-size: 36px; /* Augmenter la taille du texte pour que ce soit bien visible */
+    margin-bottom: 20px;
+}
+
+.introduction p {
+    font-size: 18px;
+    color: #b3b3b3;
+    line-height: 1.8;
+    max-width: 800px; /* Limiter la largeur pour une meilleure lisibilité */
+    margin: 0 auto; /* Centrer le paragraphe */
+}
+
+/* Topbar styles */
 .topbar {
     background-color: #1a1463;
     overflow: hidden;
@@ -15,11 +34,11 @@ body {
     width: 100%;
     top: 0;
     left: 0;
-    z-index: 1; /* Ensure topbar is above content */
-    transition: background-color 0.3s ease; /* Smooth transition for background color */
+    z-index: 1;
+    transition: background-color 0.3s ease;
 }
 
-/* Uniquement pour le nom du site web  */
+/* Topbar - Site name */
 .topbar h4 {
     float: left;
     display: inline-block;
@@ -31,7 +50,7 @@ body {
     font-weight: normal;
 }
 
-/* Uniquement pour les liens de la top-bar */
+/* Topbar - Links */
 .topbar a {
     float: right;
     display: inline-block;
@@ -39,88 +58,71 @@ body {
     padding: 14px 30px;
     text-decoration: none;
     font-size: 30px;
-    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth hover effects */
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .topbar a:hover {
     background-color: #333;
     color: #fedede;
-    transform: scale(1.1); /* Slight zoom effect on hover */
-}
-
-.topbar h4 {
-    transition: color 0.3s ease; /* Smooth transition for text color */
+    transform: scale(1.1);
 }
 
 .topbar h4:hover {
-    color: #ffffff; /* Change color on hover */
+    color: #ffffff;
 }
 
-/* New content section */
-.introduction {
-    padding: 80px 20px; /* Padding to ensure content is below the topbar */
-    margin-top: 60px; /* Additional margin for spacing */
+/* Content Wrapper - Flexbox layout */
+.content-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 40px 20px;
+    margin-top: 30px;
 }
 
-.introduction h1, .introduction p {
+/* Sections - Left aligned and Right aligned */
+.premier_travaux, .competence_iut, .competence_ENS {
+    background-color: #1d1f27;
+    margin-bottom: 20px;
+    padding: 20px;
+    width: 30%;
+    color: #b3b3b3;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.premier_travaux {
+    order: 1;
+}
+
+.competence_iut {
+    order: 2;
+}
+
+.competence_ENS {
+    order: 3;
+}
+
+h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+ol {
+    padding-left: 20px;
+}
+
+/* Text content styling */
+h1, p {
     margin: 0 0 20px;
-    font-size: 24px; /* Larger font size for headings */
-    line-height: 1.6;
     text-align: center;
 }
 
-.introduction p {
+h1 {
+    font-size: 36px;
+}
+
+p {
     line-height: 1.8;
     color: #b3b3b3;
-}
-
-.premier_travaux p{
-    margin: 0 0 20px;
-    line-height: 1.8;
-    color: #b3b3b3;
-    width: 600px;
-}
-
-.premier_travaux li {
-    padding: 6px 15px;
-    width: 600px;
-}
-
-
-.premier_travaux h2 {
-    margin: 0 0 20px;
-    font-size: 24px; /* Larger font size for headings */
-    line-height: 1.6;
-    text-align: -webkit-left;
-    width: 600px;
-    padding: 10px 0;
-}
-
-
-.competence_iut p{
-    margin: 0 0 20px;
-    line-height: 1.8;
-    color: #b3b3b3;
-}
-
-.competence_iut li {
-    padding: 6px 15px;
-    width: 600px;
-}
-
-
-.competence_iut h2 {
-    margin: 0 0 20px;
-    font-size: 24px; /* Larger font size for headings */
-    line-height: 1.6;
-
-    width: 600px;
-}
-
-.introduction h2 {
-    margin: 0 0 20px;
-    font-size: 24px; /* Larger font size for headings */
-    line-height: 1.6;
-    width: 600px;
-    padding: 10px 0;
 }
