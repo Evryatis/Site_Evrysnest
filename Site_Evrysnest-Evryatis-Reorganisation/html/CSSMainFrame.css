@@ -13,14 +13,6 @@ body {
     text-align: center; /* Pour centrer le texte */
 }
 
-.text {
-
-    padding: 100px 20px; /* Augmentation du padding pour assurer qu'il ne soit pas caché sous la topbar */
-    margin-top: 30px; /* Cela peut être ajusté en fonction de la hauteur de ta topbar */
-    text-align: center;
-
-}
-
 .introduction h1 {
     font-size: 36px; /* Augmenter la taille du texte pour que ce soit bien visible */
     margin-bottom: 20px;
@@ -33,6 +25,19 @@ body {
     max-width: 800px; /* Limiter la largeur pour une meilleure lisibilité */
     margin: 0 auto; /* Centrer le paragraphe */
 }
+
+.introduction h5 {
+
+    font-size: 18px;
+    padding: 60px 20px 100px;
+    color: #efe7e7;
+    line-height: 1.8;
+    max-width: 800px; /* Limiter la largeur pour une meilleure lisibilité */
+    margin: 0 auto; /* Centrer le paragraphe */
+    text-align: start;
+
+}
+
 
 /* Topbar styles */
 .topbar {
